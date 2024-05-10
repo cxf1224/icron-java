@@ -296,7 +296,7 @@ public class LibICC implements AutoCloseable {
 
     static {
 
-//         String lib = System.getenv("lib");
+//         String lib = System.getenv("lib"); aaaaaa
 //        System.out.println("lib >>>>>>>>>"+lib);
 //        String libPath = System.getProperty("java.library.path");
 //        System.out.println("libPath >>>>>>>>> "+libPath);

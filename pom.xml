@@ -26,10 +26,14 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version> <!-- 使用最新版本 -->
+        <configuration>
+          <source>11</source> <!-- 指定JDK版本，如1.8 -->
+          <target>11</target> <!-- 指定JDK版本，与source保持一致 -->
+        </configuration>
       </plugin>
-
 
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>

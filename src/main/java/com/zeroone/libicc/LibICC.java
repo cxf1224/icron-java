@@ -296,10 +296,8 @@ public class LibICC implements AutoCloseable {
 
     static {
 
-//         String lib = System.getenv("lib"); aaaaaa
-//        System.out.println("lib >>>>>>>>>"+lib);
-//        String libPath = System.getProperty("java.library.path");
-//        System.out.println("libPath >>>>>>>>> "+libPath);
+        String libPath = System.getProperty("java.library.path");
+        System.out.println("libPath >>>>>>>>> "+libPath);
 
 
 
@@ -307,9 +305,8 @@ public class LibICC implements AutoCloseable {
 //        System.load(lib);
 //        System.loadLibrary("E:\\icron-icc-workspace\\icron-java\\src\\main\\java\\libs\\x86_64\\libicc.so");
 
-        System.loadLibrary("icc");
-
-//        System.loadLibrary("icc-jni");
+//        System.loadLibrary("icc");
+        System.loadLibrary("icc-jni");
         libInit();
     }
 

@@ -296,8 +296,8 @@ public class LibICC implements AutoCloseable {
 
     static {
         String lib = System.getenv("lib");
-        System.load(lib);
-//        System.load("E:\\icron-icc-workspace\\icron-java\\src\\main\\java\\libs\\x86_64\\libicc.so");
+        System.loadLibrary(lib);
+//        System.loadLibrary("E:\\icron-icc-workspace\\icron-java\\src\\main\\java\\libs\\x86_64\\libicc.so");
 //        System.loadLibrary("icc-jni");
         libInit();
     }

@@ -6,7 +6,7 @@ public class Main {
     String lib = System.getenv("lib");
     System.out.println("lib >>>>>>>>>"+lib);
     String libPath = System.getProperty("java.library.path");
-    System.out.println("libPath >>>>>>>>>"+libPath);
+    System.out.println("libPath >>>>>>>>> "+libPath);
 
   }
 }

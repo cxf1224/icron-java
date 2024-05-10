@@ -7,6 +7,8 @@
 package com.zeroone.libicc;
 
 
+import java.net.URL;
+
 /**
  * Class that encapsulates LibICC interface
  */
@@ -293,8 +295,11 @@ public class LibICC implements AutoCloseable {
     }
 
     static {
+        String property = System.getProperty("lib");
+        System.out.println("lib >>>>>>>>>"+property);
+        System.load(property);
 //        System.load("E:\\icron-icc-workspace\\icron-java\\src\\main\\java\\libs\\x86_64\\libicc.so");
-        System.loadLibrary("icc-jni");
+//        System.loadLibrary("icc-jni");
         libInit();
     }
 

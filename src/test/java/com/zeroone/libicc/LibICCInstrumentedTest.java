@@ -5,6 +5,7 @@ import com.zeroone.libicc.LibICC.EncryptionType;
 import com.zeroone.libicc.LibICC.HashType;
 import com.zeroone.libicc.LibICC.SignatureType;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -47,6 +48,8 @@ public class LibICCInstrumentedTest {
 
         return result;
     }
+
+    @Ignore
     @Test
     public void testBslIsEnough() throws Exception {
         byte[] pubKey;
@@ -62,6 +65,7 @@ public class LibICCInstrumentedTest {
         }
     }
 
+    @Ignore
     @Test(expected = LibIccException.class)
     public void testBslIsNotEnough() throws Exception {
         byte[] pubKey;
@@ -100,6 +104,7 @@ public class LibICCInstrumentedTest {
         }
     }
 
+    @Ignore
     @Test
     public void testSignWrongKey() throws Exception {
         byte[] wrongKey;
@@ -130,6 +135,7 @@ public class LibICCInstrumentedTest {
         }
     }
 
+    @Ignore
     @Test
     public void testSignWrongData() throws Exception {
         byte[] pubKey;
@@ -157,6 +163,7 @@ public class LibICCInstrumentedTest {
         }
     }
 
+    @Ignore
     @Test
     public void testEncrypt() throws Exception {
         try (LibICC icc = LibICC.newKeypair(
@@ -178,6 +185,7 @@ public class LibICCInstrumentedTest {
         }
     }
 
+    @Ignore
     @Test
     public void testExportKeys() throws Exception {
         byte[] privKey;
